@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="1234.jpg" style="background-size: cover; background-attachment: fixed;">
+	<div class="row" style="margin-right: 0px; margin-left: 0px;" >
+	<nav class="col-12 navbar navbar-default" style="margin-bottom: 0px;">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#">
+        			<i class="glyphicon glyphicon-cloud" style="font-size:24px; color: white;"></i>
+     			</a>
+     			<a class="navbar-brand" style="color: white">Wheather</a>
+    		</div>
+  		</div>
+	</nav>
+	<div class="col-12" id="navbar-search">
+ 
+  	</div>	
+  </div>
+	<div id="java1">
+		
+	</div>
+	<div class="result" id="java2">
+	</div>
+	
+	<div id="searchengine">
+		<div class="container">
+			<div class="row">
+				<!-- Search bar -->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 searchbar">
+					<!-- Searchbar label -->
+					<div class="searchbar-label"><h1>Enter Location</h1>
+					</div>
+					<!-- Searchbar input -->
+					<div class="searchbar-input">
+						<i class="glyphicon glyphicon-map-marker" style="font-size:23px;"></i><input type="text" class="searchbar-input-text location1" placeholder="location">
+					</div>
+					<!-- Searchbar button -->
+					<div class="searchbar-button">
+						<a class="searchbutton1" href="#" onclick="checkweather()">
+							<span class="glyphicon glyphicon-search " aria-hidden="true" style=" color: white;"></span>
+    					</a>
+    				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Search bar -->
+
+	<!-- Footer -->
+	<footer class="page-footer font-small white">
+  	<!-- Copyright -->
+  		<div class="footer-copyright text-center py-3 foot">© 2018 Copyright:
+   			<a href="#" style="color: white;"> Weather.com</a>
+  		</div>
+  	</footer>
+	<!-- /Footer -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>

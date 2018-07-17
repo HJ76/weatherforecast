@@ -1,0 +1,141 @@
+.page-footer
+{
+	position: relative;
+}
+.navbar
+{
+	background-color: #40718c;
+	box-shadow: none;
+	border:none;
+	text-align: center;
+}
+.navbar-search
+{
+	background-color: blue;
+}
+.topnav
+{
+	text-align: center;
+}
+#location
+{
+	height: 32px;
+	width: 50%;
+	margin-right: 5px; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 12px;
+	box-shadow: none;
+	border:none;
+	background-color: white;
+	text-align: center;
+}
+#location:focus{
+    outline: none;
+}
+.glyphicon-search
+{
+	color:black;
+}
+.searchbutton
+{
+	padding: 10px;
+	background-color: rgb(224, 226, 229);
+	border-radius: 4px;
+}
+
+.searchbutton1
+{
+	padding: 10px;
+	background-color: #39647c;
+	border-radius: 4px;
+}
+.searchbar
+{
+	background-color: #4c84a3;
+	opacity: 0.90;
+	margin-top: 100px; 
+	border-radius: 15px;
+}
+.searchbar-label
+{
+	color: white;
+	text-align: center; 
+	margin-top: 150px; 
+	margin-bottom: 20px;
+}
+.searchbar-input
+{
+	color: white;
+	text-align: center; 
+	margin-top: 20px; 
+	margin-bottom: 20px;
+}
+.searchbar-input-text
+{
+	color: black;
+	width: 80%;
+	height: 35px; 
+	border-radius: 7px; 
+	box-shadow: none; 
+	border:none; 
+	text-align: center; 
+	padding-right: 4px; 
+	margin-left: 7px;
+}
+.searchbar-input-text:focus{
+    outline: none;
+}
+.searchbar-button
+{
+	text-align: center; 
+	margin-top: 30px; 
+	margin-bottom: 150px;
+}
+
+.jumbo
+{
+	color: white; 
+	border-radius: 20px; 
+	background-color: #88b5ce;
+	opacity: 0.90;
+}
+.jumbo-location
+{
+	text-align:left; 
+	padding-top: 0px;
+	
+}
+.jumbo-mmtemp
+{
+	text-align:left; 
+	font-size: 20px;
+}
+
+.jumbo-data
+{
+	padding-top: 20px;
+}
+.jumbo-data-data
+{
+	text-align: left; 
+	font-size: 20px;
+}
+.jumbo-cloud
+{
+	text-align: center;
+}
+.jumbo-temp
+{
+	font-size: 120px;
+}
+.jumbo-state
+{
+	text-align: center; 
+	font-size: 40px;
+}
+.foot
+{
+	color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
