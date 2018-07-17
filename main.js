@@ -8,6 +8,7 @@ $(function ($) {
         $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     })
 });
+//end jquery toggle
 function checkweather()
 {
     //Getting location from user
@@ -18,7 +19,7 @@ function checkweather()
 	var searchbar1 = document.querySelector("#searchengine");
 	//clear searchengine content
 	searchbar1.innerHTML="";
-	var nvsearchdata=`<div class="row" style="background-color:#40718c; opacity: 0.60; margin-right: 0px; margin-left: 0px; margin-bottom:40px;">
+	var nvsearchdata=`<div class="row nvdata1">
 	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0" ></div>\
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 topnav">\
  				<input type="text" placeholder="location" id="location" class="location1">\

@@ -17,6 +17,14 @@
 {
 	text-align: center;
 }
+.text1
+{
+	text-align: center; 
+	font-size: 60px; 
+	margin-top: 150px; 
+	color: white; 
+	font-family: Andale Mono, monospace;
+}
 #location
 {
 	height: 32px;
@@ -133,6 +141,14 @@
 {
 	text-align: center; 
 	font-size: 40px;
+}
+.nvdata1
+{
+	background-color:#40718c; 
+	opacity: 0.60; 
+	margin-right: 0px; 
+	margin-left: 0px; 
+	margin-bottom:40px;
 }
 .foot
 {
