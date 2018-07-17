@@ -29,7 +29,12 @@ function checkweather()
     		</div>\
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>\
     </div>`;
+    var animate=`<div class="loader"></div>`;
 	nvsearch.innerHTML=nvsearchdata;
+	var msgdiv = document.querySelector("#java1");
+	var div=document.querySelector("#java2");
+	div.innerHTML="";
+	msgdiv.innerHTML=animate;
 	//query url
 	var queryURL = "http://localhost:3000/" + location;
 	//query url: https://www.metaweather.com/api/location/search/?query=location
@@ -65,6 +70,7 @@ function displaylocationresult(result)
 	if (result.message)
 	{
 		div.innerHTML = "";
+		msgdiv.innerHTML = "";
 		// if wrong location entered give message
 		msgdiv.innerHTML = `<div class="alert alert-danger alert-dismissible " role="alert">\
 							<button type="button" class="close" data-dismiss="alert">x</button>\
@@ -112,6 +118,7 @@ function displaylocationresult(result)
       						<div class="col-12 jumbo-state">${weather[i].weather_state_name}</div>  
       					</div>
   					</div>`;
+
   	//appending variable "currentday" data into result div 
 	$("#java2").append(currentday);
 	//loop to get weather data for next 5 days
