@@ -1,14 +1,7 @@
 var locationsearch="";
 var nvsearch = document.querySelector("#navbar-search");
 var color;
-// jquery toggle + -   but not working for dynamic html(html added by js)
-var selectIds = $('#panel1,#panel2,#panel3,#panel4,#panel5');
-$(function ($) {
-    selectIds.on('shown.bs.collapse hidden.bs.collapse', function () {
-        $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-    })
-});
-//end jquery toggle
+
 function checkweather()
 {
     //Getting location from user
@@ -29,7 +22,7 @@ function checkweather()
     		</div>\
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>\
     </div>`;
-    var animate=`<div class="loader"></div>`;
+    var animate=`<div class="row"><div class="col-12"><div class="loader"></div></div></div>`;
 	nvsearch.innerHTML=nvsearchdata;
 	var msgdiv = document.querySelector("#java1");
 	var div=document.querySelector("#java2");
@@ -152,7 +145,7 @@ function displaylocationresult(result)
       							</div>\
       							<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">\
        								<h4 class="panel-title">\
-                						<a class="accordion-toggle" id="base${i}" data-toggle="collapse" href="#panel${i}" ><i class="glyphicon glyphicon-plus" style="color:white;"></i></a>\
+                						<a class="accordion-toggle" id="base${i}" data-toggle="collapse" href="#panel${i}" ><i class="glyphicon glyphicon-plus" id="myclass${i}" onclick="changeclass(${i})" style="color:white;"></i></a>\
             						</h4>\
       							</div>\
        						</div>\
@@ -181,6 +174,22 @@ function displaylocationresult(result)
 	}
 
 }
+//  toggle + -   
+function changeclass(i) {
+clas="myclass" + i;
+console.log(clas)
+var NAME = document.getElementById(clas)
+var g=NAME.className;
+if (g=="glyphicon glyphicon-minus")
+{
+	NAME.className="glyphicon glyphicon-plus";
+}
+else
+{
+	NAME.className="glyphicon glyphicon-minus";
+}
+
+} 
 //function defination
 function cloud(result,j)
 {	
